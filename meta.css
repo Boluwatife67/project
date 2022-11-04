@@ -1,0 +1,267 @@
+:root{
+    --header-height : 3rem;
+    --font-semi : 600;
+}
+
+/* Colors */
+
+:root{
+    --first-color: #fff;
+    --second-color: #0000;
+}
+
+/* FONT STYLE */
+
+:root{
+    --big-font-size : 2rem;
+    --h2-font-size : 1.5rem;
+    --normal-font-size : 0.938rem;
+}
+
+/* Media Screen Min-width : 768px */
+@media screen and (min-width : 768px){
+    :root{
+        --big-font-size : 3.5rem;
+        --h2-font-size : 2rem;
+        --normal-font-size : 1rem; 
+    }
+}
+
+/* Margins */
+:root{
+    --mb-1 : 0.5rem;
+    --mb-2 : 1rem;
+    --mb-3 : 1.5rem;
+    --mb-4 : 2rem;
+    --mb-5 : 2.5rem;
+    --mb-6 : 3rem;
+}
+
+/* Z-index */
+:root{
+    --z-back : -10;
+    --z-normal : 1;
+    --z-tooltip : 10;
+    --z-fixed : 100;
+}
+
+/* Base */
+*, 
+::before, 
+::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header_main{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.header_1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/young-woman-wearing-blue-swimming-cap-735x1102.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+    
+    
+}
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.header2{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    margin-right: 25px;
+}
+
+/* body{
+    background-image: url(img/young-woman-wearing-blue-swimming-cap-735x1102.jpg.webp);
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    overflow: scroll;
+} */
+/* .body_content{
+    margin-top: 70px;
+} */
+.body_text{
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+.body_text_1{
+    color: var(--first-color);
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+.body_text_2{
+    color: rgb(103, 100, 100);
+    line-height: 2rem;
+}
+.body_section{
+    width: 100%;
+    height: auto;
+    background-color: var(--first-color);
+   
+}
+.body_textt_1{
+    margin-top: 80px;
+}
+.body_text_3{
+    letter-spacing: 2px;
+}
+.body_text_3_1{
+    word-spacing: 3px;
+}
+/* .body_text_img{
+    margin-top: 3rem;
+}
+.body_text_imgg{
+    margin: ;
+    
+} */
+.people{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    
+}
+.body_section_sub{
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+}
+.body_text_img{
+    margin-top: 3rem;
+}
+.sub_div{
+    margin: 0 auto;
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sub_div_imgg{
+    width: 100%;
+}
+.body_section_sub_sub{
+    width: 50%;
+    
+}
+.sub{
+    background-color: rgb(218, 218, 218);
+}
+@media screen and (max-width: 768px) {
+    .body_section_sub{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .sub_div{
+        margin: 10px;
+        /* width: 80%; */
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .sub_div_imgg{
+        width: 100%;
+    }
+    .body_section_sub_sub{
+        width: 100%;
+        
+    } 
+
+
+}
+
+.footer{
+    margin-top: 0.3rem;
+    width: 100%;
+    height: auto;
+}
+.footer_logo{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    
+
+    
+}
+.footer_img{
+    width: 200px;   
+}
+.media{
+    margin-top: 5rem;
+}
+.u{
+    font-size: 2rem;
+    padding: 10px;
+}
+.acoord{
+    display: block;
+    padding-top: -1rem;
+}
+.acoord_item{
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .body_section{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .body_section{
+        text-align: center;
+    }
+    .body_text_1{
+        text-align: center;
+    }
+    .body_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .body_text_3_1{
+        font-size: 3rem;
+    }
+}
+
